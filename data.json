@@ -1,0 +1,108 @@
+{
+    "name": "Juan Dough",
+    "address": "123 Tech Street, Silicon Valley, CA",
+    "email": "juandough@example.com",
+    "phone": "+1 (555) 123-4567",
+    "experience": [
+        {
+            "title": "Full Stack Developer",
+            "company": "TechCorp Solutions",
+            "years": "2020 – Present",
+            "description": [
+                "Developed scalable web applications using React.js, Node.js, and MongoDB, increasing performance by 40%.",
+                "Optimized workflows by implementing RESTful APIs and GraphQL endpoints, improving efficiency.",
+                "Collaborated with UX/UI designers to enhance user experience, resulting in a 25% increase in engagement.",
+                "Documented technical processes, reducing onboarding time for new developers by 30%."
+            ]
+        },
+        {
+            "title": "Backend Developer",
+            "company": "Innovatech Labs",
+            "years": "2018 – 2020",
+            "description": [
+                "Designed and implemented microservices architecture, reducing system downtime by 50%.",
+                "Integrated secure third-party APIs for real-time data synchronization using OAuth2.",
+                "Utilized Docker and Kubernetes for containerized deployments, cutting infrastructure costs by 20%.",
+                "Maintained 95% unit test coverage with Jest and PyTest, improving system reliability."
+            ]
+        },
+        {
+            "title": "Software Engineering Intern",
+            "company": "Startupify Inc.",
+            "years": "2017 – 2018",
+            "description": [
+                "Assisted in developing a real-time chat application using WebSockets and Node.js.",
+                "Created API documentation, improving third-party integration efficiency.",
+                "Participated in Agile sprint planning, contributing to 10 successful feature launches."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "M.S. in Computer Science",
+            "school": "Stanford University",
+            "years": "2015 – 2017",
+            "description": [
+                "GPA: 3.9/4.0 – Graduated with Honors.",
+                "Research focused on distributed systems and scalable cloud computing.",
+                "Relevant Courses: Advanced Algorithms, Cloud Computing, Machine Learning."
+            ]
+        },
+        {
+            "degree": "B.Sc. in Software Engineering",
+            "school": "California Institute of Technology",
+            "years": "2011 – 2015",
+            "description": [
+                "GPA: 3.8/4.0 – Dean’s List.",
+                "Relevant Courses: Operating Systems, Software Architecture, Data Structures."
+            ]
+        }
+    ],
+    "technical_experience": [
+        {
+            "name": "Cloud-Based Inventory Management System",
+            "year": "2022",
+            "description": [
+                "Built a scalable inventory management platform using AWS Lambda and DynamoDB.",
+                "Optimized database indexing and caching strategies, reducing query latency by 40%.",
+                "Designed a user-friendly dashboard in Vue.js, increasing client satisfaction by 35%."
+            ]
+        },
+        {
+            "name": "E-Commerce Recommendation Engine",
+            "year": "2021",
+            "description": [
+                "Implemented a recommendation algorithm using Python and TensorFlow, increasing sales by 15%.",
+                "Integrated into an e-commerce platform via Flask APIs.",
+                "Deployed model on AWS EC2 for real-time product recommendations."
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "name": "Hackathon Champion",
+            "year": "2021",
+            "details": [
+                "Led a team in developing a decentralized voting system using blockchain technology.",
+                "Awarded first place among 100+ competing teams for innovative and scalable solutions."
+            ]
+        },
+        {
+            "name": "Top Innovator Award",
+            "year": "2020",
+            "details": [
+                "Recognized for implementing CI/CD pipelines that reduced deployment times by 60%.",
+                "Awarded for contributions to open-source projects and DevOps automation."
+            ]
+        }
+    ],
+    "skills": [
+        "Programming: Python, JavaScript, Java, C++",
+        "Frontend: React.js, Vue.js",
+        "Backend: Node.js, Flask, Express.js",
+        "Cloud & DevOps: AWS, GCP, Docker, Kubernetes, Terraform",
+        "Databases: PostgreSQL, MySQL, MongoDB, DynamoDB",
+        "Testing & Tools: Git, Selenium, Jest, PyTest, Jenkins, CircleCI",
+        "Other Skills: Agile Methodologies, RESTful APIs, GraphQL"
+    ]
+}

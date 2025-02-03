@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - {{ name }}</title>
+  <link rel="stylesheet" href="cv_template.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <h1>{{ name }}</h1>
+    <div class="contact">
+      {{ address }}<br>
+      {{ email }} | {{ phone }}
+    </div>
+  </div>
+
+  <!-- Employment Section -->
+  {% if experience %}
+  <div class="section">
+    <div class="section-title">Employment</div>
+    {% for job in experience %}
+    <div class="subsection">
+      <div class="subsection-title">
+        <span class="left">{{ job.title }}</span>
+        <span class="right">{{ job.company }} | {{ job.years }}</span>
+      </div>
+      <ul>
+        {% for point in job.description %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Education Section -->
+  {% if education %}
+  <div class="section">
+    <div class="section-title">Education</div>
+    {% for edu in education %}
+    <div class="subsection">
+      <div class="subsection-title">
+        <span class="left">{{ edu.degree }}</span>
+        <span class="right">{{ edu.school }} | {{ edu.years }}</span>
+      </div>
+      <p>{{ edu.description | join(", ") }}</p> <!-- Condensed to a single line -->
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Technical Experience Section -->
+  {% if technical_experience %}
+  <div class="section">
+    <div class="section-title">Technical Projects</div>
+    {% for project in technical_experience %}
+    <div class="subsection">
+      <div class="subsection-title">
+        <span class="left">{{ project.name }}</span>
+        <span class="right">{{ project.year }}</span>
+      </div>
+      <ul>
+        {% for detail in project.description %}
+        <li>{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Skills Section -->
+  {% if skills %}
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <ul>
+      {% for skill in skills %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+</body>
+</html>
