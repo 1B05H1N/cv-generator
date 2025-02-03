@@ -16,6 +16,14 @@
     </div>
   </div>
 
+  <!-- Summary Section -->
+  {% if summary %}
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p>{{ summary }}</p>
+  </div>
+  {% endif %}
+
   <!-- Employment Section -->
   {% if experience %}
   <div class="section">
@@ -46,7 +54,7 @@
         <span class="left">{{ edu.degree }}</span>
         <span class="right">{{ edu.school }} | {{ edu.years }}</span>
       </div>
-      <p>{{ edu.description | join(", ") }}</p> <!-- Condensed to a single line -->
+      <p>{{ edu.description | join(", ") }}</p>
     </div>
     {% endfor %}
   </div>
@@ -69,6 +77,18 @@
       </ul>
     </div>
     {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Certifications Section -->
+  {% if certifications %}
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul>
+      {% for cert in certifications %}
+      <li>{{ cert.name }} - {{ cert.issuer }} ({{ cert.year }})</li>
+      {% endfor %}
+    </ul>
   </div>
   {% endif %}
 
