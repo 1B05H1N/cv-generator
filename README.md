@@ -33,12 +33,6 @@ pip install -r requirements.txt
 Run:  
 
 ```sh
-python cv_generator.py --template cv_template.html --data data.json --output_html output/output.html --output_pdf output/resume.pdf
-```
-
-Or simply:
-
-```sh
 python cv_generator.py
 ```
 
